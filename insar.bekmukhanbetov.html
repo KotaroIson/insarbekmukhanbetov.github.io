@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insar Bekmukhanbetov — Portfolio</title>
+  <meta name="description" content="Portfolio of Insar Bekmukhanbetov — aspiring Computer Science student, AI innovator, and leader passionate about technology and impact." />
+  <style>
+    :root {
+      --bg:#f7f7fb; --card:#ffffff; --text:#0f1724; --muted:#6b7280; --accent:#2563eb;
+    }
+    [data-theme='dark'] {
+      --bg:#0b1220; --card:#071022; --text:#e6eef8; --muted:#9aa6bf; --accent:#60a5fa;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      animation: fadein 0.8s ease-in;
+    }
+    @keyframes fadein { from {opacity:0} to {opacity:1} }
+
+    .container { max-width: 1050px; margin: 36px auto; padding: 0 20px; }
+    header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; }
+    .brand { display: flex; gap: 14px; align-items: center; }
+    .avatar img { width: 62px; height: 62px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    nav a { margin-left: 14px; text-decoration: none; color: var(--muted); font-weight: 600; }
+    .hero { display: grid; grid-template-columns: 1fr 320px; gap: 20px; align-items: start; margin-bottom: 30px; }
+    .card { background: var(--card); border-radius: 14px; padding: 20px; box-shadow: 0 6px 20px rgba(2,6,23,0.06); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    h1 { margin: 0 0 6px; font-size: 26px; }
+    p.lead { margin: 0; color: var(--muted); }
+    .cta { display: flex; gap: 10px; margin-top: 12px; }
+    .btn { background: var(--accent); color: white; padding: 10px 14px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+    .mutebtn { border: 1px solid rgba(100,116,139,0.2); padding: 8px 12px; border-radius: 10px; text-decoration: none; color: var(--text); background: transparent; }
+    .meta { font-size: 13px; color: var(--muted); margin-top: 8px; }
+    h2 { color: var(--accent); margin-top: 28px; }
+    .grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+    .project-title { font-weight: 700; margin: 0 0 6px; }
+    .small { font-size: 13px; color: var(--muted); }
+    footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 13px; padding: 18px; }
+    @media(max-width:880px) { .hero { grid-template-columns:1fr; } .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+
+<body data-theme="light">
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="avatar"><img src="more_official.jpeg" alt="Insar Bekmukhanbetov"></div>
+        <div>
+          <div style="font-weight:800">Insar Bekmukhanbetov</div>
+          <div style="font-size:13px;color:var(--muted)">Aspiring Computer Science student • AI & Web Dev</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#journey">Journey</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <h1>Hello — I’m Insar</h1>
+        <p class="lead">An 18-year-old student passionate about AI, problem-solving, and meaningful technology. I build practical web apps and AI tools that connect people and ideas.</p>
+        <p style="color:var(--muted);font-size:15px;margin-top:8px"><em>“Dare to grow — from football fields to future AI labs.”</em></p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="mutebtn" href="/resume.pdf" download>Download Résumé</a>
+        </div>
+        <div class="meta">🎓 GPA: 4.81 / 5.00 (3.85 / 4.00) &nbsp;•&nbsp; SAT: 1500 (710 RW / 790 Math) &nbsp;•&nbsp; IELTS: 7.5 (L9, R8, S7, W6.5)</div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Facts</h3>
+          <div class="small" style="margin-top:8px">
+            • Nationality: Kazakhstan<br>
+            • School: Nazarbayev Intellectual School (Medeu)<br>
+            • Predicted A-Levels: A*(CS), A*(Math), A(Physics)<br>
+            • Interests: Football, Chess, German, AI, Cybersecurity
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- MY JOURNEY -->
+    <section id="journey">
+      <h2>My Journey</h2>
+      <div class="card">
+        <p>
+          When I was three, I fell in love with football — even while battling asthma that made breathing difficult. That challenge shaped my mindset forever. 
+          Football taught me resilience, teamwork, and empathy — lessons I now carry into technology and leadership. 
+          Whether coding AI models or mentoring peers, I approach every challenge like a match: with focus, persistence, and belief.
+        </p>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership">
+      <h2>Leadership & Community</h2>
+      <div class="card">
+        <ul style="margin:8px 0;padding-left:18px;color:var(--muted)">
+          <li><strong>Speaker of Student Parliament</strong> — Represented 600+ students, led student initiatives and reforms.</li>
+          <li><strong>Vice President, EcoClub KZ</strong> — Taught 600+ students waste sorting and eco-sustainability nationwide.</li>
+          <li><strong>Founder, SAT Study Community</strong> — Built peer-led study group (80+ members), one student scored 1540.</li>
+          <li><strong>Captain, Football Team</strong> — Founded school team, led from 3rd place to championship victory.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="project-title">Smart Glasses — Real-time Translation</div>
+          <div class="small">Team Lead • Tech: Python, Speech Recognition, IoT</div>
+          <p class="small">Prototyped wearable translator for travelers and hearing-impaired users. Developed speech-to-text and multi-language translation pipeline.</p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Finance Empire - Financial Literacy Simulator</div>
+          <div class="small">Team Lead and full-stack developer • Tech: React, Firebase</div>
+          <p class="small">Gamified budgeting and saving simulator for youth. Includes gaming process, progress tracking, and real-time feedback.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <h2>Achievements & Academics</h2>
+      <div class="card">
+        <ul style="margin:8px 0;padding-left:18px;color:var(--muted)">
+          <li><strong>CUHK Elite Innovation Summer Camp</strong> - AI & LLM Focus (Highly Selective International Program)</li>
+          <li><strong>Creaton Hackathon 2025</strong> - 2nd Place among 200+ teams, Internship Award</li>
+          <li><strong>Economics Olympiad</strong> - Top 15 among 400+ teams (2024 & 2025)</li>
+          <li><strong>FIDE Arena International Master</strong> — Official FIDE ELO: 1792</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="small">Feel free to reach out - I’m always open to collaboration, research, and new opportunities.</p>
+        <p>Email: <a href="mailto:insar.bekmukhanbetov@gmail.com">insar.bekmukhanbetov@gmail.com</a></p>
+        <p><a href="https://github.com/kotaroIson" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/insar-bekmukhanbetov/" target="_blank">LinkedIn</a></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      Built by Insar Bekmukhanbetov • Thank you for visiting!
+    </footer>
+  </div>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.createElement('button');
+    toggle.className = 'mutebtn';
+    toggle.innerText = 'Toggle Dark';
+    toggle.style.position = 'fixed';
+    toggle.style.bottom = '20px';
+    toggle.style.right = '20px';
+    document.body.appendChild(toggle);
+
+    toggle.addEventListener('click', () => {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      toggle.innerText = isDark ? 'Toggle Dark' : 'Toggle Light';
+    });
+  </script>
+</body>
+</html>
